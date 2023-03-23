@@ -22,7 +22,8 @@
 		<h2 class="text-center text-5xl font-semibold mb-8">Control the web with the power of AI</h2>
 
 		<p class="text-center max-w-2xl mx-auto">
-			Boost your online experience with GPT-Commands, a GPT-4 Chrome extension for rapid, precise responses. Enter your OpenAI API key to get started.
+			Boost your online experience with GPT-Commands, a GPT-4 Chrome extension for rapid, precise
+			responses. Enter your OpenAI API key to get started.
 		</p>
 	</div>
 
@@ -70,7 +71,7 @@
 	>
 		<div class="max-w-lg">
 			<h2 class="text-4xl font-bold text-gray-800 dark:text-gray-100 xl:text-3xl mb-8">
-				Influencer Mode
+				<Icon name="verified" class="text-yellow-300 text-xl"/> Influencer Mode
 			</h2>
 			<p>
 				GPT Commands allows users to become notable Twitter influencers, effectively boosting their
@@ -85,7 +86,7 @@
 		<img src="devto-article.gif" alt="" class="max-w-xl w-full rounded-2xl" />
 		<div class="max-w-lg">
 			<h2 class="text-4xl font-bold text-gray-800 dark:text-gray-100 xl:text-3xl mb-8">
-				Writer Mode
+				<Icon name="border_color" class="text-green-500 text-xl"/> Writer Mode
 			</h2>
 			<p>
 				The Writer Mode in GPT-Commands allows you to delegate your writing tasks to GPT-4. Whether
@@ -99,7 +100,7 @@
 	>
 		<div class="max-w-lg">
 			<h2 class="text-4xl font-bold text-gray-800 dark:text-gray-100 xl:text-3xl mb-8">
-				Translator Mode
+				<Icon name="translate" class="text-sky-500 text-xl"/> Translator Mode
 			</h2>
 			<p>
 				Translator mode in GPT Commands swiftly and accurately converts text between languages,
@@ -114,7 +115,7 @@
 		<img src="github-fixgrammar.gif" alt="" class="max-w-xl w-full rounded-2xl" />
 		<div class="max-w-lg">
 			<h2 class="text-4xl font-bold text-gray-800 dark:text-gray-100 xl:text-3xl mb-8">
-				Fix grammar
+				<Icon name="menu_book" class="text-pink-500 text-xl"/> Fix grammar
 			</h2>
 			<p>
 				Fix grammar feature efficiently detects and corrects grammatical errors, enhancing text
