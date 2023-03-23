@@ -7,7 +7,7 @@
 <main class="w-full h-3/4 min-h-[600px] flex flex-col justify-center items-center">
 	<div class="container flex flex-col items-center px-4 py-8 mx-auto text-center">
 		<header class="flex flex-row items-center gap-4">
-			<img src="favicon-96x96.png" alt="MyBrain" class="rounded-md shadow shadow-slate-300" />
+			<img src="favicon-96x96.png" alt="MyBrain" class="rounded-md shadow shadow-slate-300 dark:shadow-slate-900" />
 			<h1 class="tracking-tight text-4xl font-bold text-gray-800 dark:text-gray-100">
 				<span class="text-cyan-500">GPT</span><span>Commands</span>
 			</h1>
