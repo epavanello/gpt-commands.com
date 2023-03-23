@@ -1,5 +1,6 @@
 <script>
 	import Button from '$lib/components/Button.svelte';
+	import Icon from '$lib/components/Icon.svelte';
 	import '../app.css';
 </script>
 
@@ -7,7 +8,7 @@
 	<div class="container flex flex-col items-center px-4 py-8 mx-auto text-center">
 		<header class="flex flex-row items-center gap-4">
 			<img src="favicon-96x96.png" alt="MyBrain" class="rounded-md shadow shadow-slate-300" />
-			<h1 class="tracking-tight text-4xl font-bold text-gray-800 dark:text-gray-100 ">
+			<h1 class="tracking-tight text-4xl font-bold text-gray-800 dark:text-gray-100">
 				<span class="text-cyan-500">GPT</span><span>Commands</span>
 			</h1>
 		</header>
@@ -77,7 +78,7 @@
 		<img src="twitter-post.gif" alt="" class="max-w-xl w-full rounded-2xl" />
 	</section>
 	<section
-		class="w-full container mx-auto flex flex-col lg:flex-row justify-center items-center gap-16 px-4 my"
+		class="w-full container mx-auto flex flex-col-reverse lg:flex-row justify-center items-center gap-16 px-4 my"
 	>
 		<img src="devto-article.gif" alt="" class="max-w-xl w-full rounded-2xl" />
 		<div class="max-w-lg">
@@ -106,7 +107,7 @@
 		<img src="twitter-transalte.gif" alt="" class="max-w-xl w-full rounded-2xl" />
 	</section>
 	<section
-		class="w-full container mx-auto flex flex-col lg:flex-row justify-center items-center gap-16 px-4 my"
+		class="w-full container mx-auto flex flex-col-reverse lg:flex-row justify-center items-center gap-16 px-4 my"
 	>
 		<img src="github-fixgrammar.gif" alt="" class="max-w-xl w-full rounded-2xl" />
 		<div class="max-w-lg">
