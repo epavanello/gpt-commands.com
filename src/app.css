@@ -6,3 +6,7 @@ html,
 body {
 	@apply h-full w-full m-0 p-0;
 }
+
+:root {
+	--rounded-btn: 0.75rem;
+}
