@@ -7,27 +7,29 @@
 <main class="w-full h-3/4 min-h-[600px] flex flex-col justify-center items-center">
 	<div class="container flex flex-col items-center px-4 py-8 mx-auto text-center">
 		<header class="flex flex-row items-center gap-4">
-			<img src="favicon-96x96.png" alt="MyBrain" class="rounded-md shadow shadow-slate-300 dark:shadow-slate-900" />
+			<img
+				src="favicon-96x96.png"
+				alt="MyBrain"
+				class="rounded-md shadow shadow-slate-300 dark:shadow-slate-900"
+			/>
 			<h1 class="tracking-tight text-4xl font-bold text-gray-800 dark:text-gray-100">
 				<span class="text-cyan-500">GPT</span><span>Commands</span>
 			</h1>
 		</header>
 	</div>
 
-	<div class="container mx-auto px-4 mt-8">
+	<div class="container mx-auto px-4 my-8">
 		<h2 class="text-center text-5xl font-semibold mb-8">Control the web with the power of AI</h2>
 
 		<p class="text-center max-w-2xl mx-auto">
-			GPT-Commands is a Chrome extension based on GPT-4 that enhances user experience by providing
-			quick, concise, and accurate responses to various inputs, streamlining online browsing and
-			interactions.
+			Boost your online experience with GPT-Commands, a GPT-4 Chrome extension for rapid, precise responses. Enter your OpenAI API key to get started.
 		</p>
 	</div>
-	<p class="text-center text-xs max-w-xl mx-auto italic text-gray-500 dark:text-gray-300 my-4">
-		Insert your OpenAI API key and use the power of OpenAI models
-	</p>
 
-	<Button link="https://buy.stripe.com/dR65nobwu8XjbLieUU" animated>$39 Preorder now</Button>
+	<Button link="https://buy.stripe.com/6oEbLM0RQ2yV4iQ8wx" animated>$39 Preorder now</Button>
+	<p class="text-center text-xs max-w-xl mx-auto italic text-gray-500 dark:text-gray-300 my-4">
+		You'll be notified of the launch via email
+	</p>
 
 	<!-- <div class="flex flex-col lg:flex-row justify-center items-center gap-8">
 		<div>
@@ -55,14 +57,14 @@
 
 						<a
 							class="block text-center w-full px-4 py-2 mt-6 tracking-wide text-white transition-colors duration-300 transform bg-cyan-600 rounded-md hover:bg-cyan-500 focus:outline-none focus:bg-cyan-500 focus:ring focus:ring-cyan-300 focus:ring-opacity-80"
-							href="https://buy.stripe.com/dR65nobwu8XjbLieUU">Preorder a license</a
+							href="https://buy.stripe.com/6oEbLM0RQ2yV4iQ8wx">Preorder a license</a
 						>
 					</div>
 				</div>
 			</div>
 		</div> -->
 </main>
-<div class="flex flex-col gap-16">
+<div class="flex flex-col gap-16 xl:gap-32">
 	<section
 		class="w-full container mx-auto flex flex-col lg:flex-row justify-center items-center gap-16 px-4"
 	>
@@ -78,7 +80,7 @@
 		<img src="twitter-post.gif" alt="" class="max-w-xl w-full rounded-2xl" />
 	</section>
 	<section
-		class="w-full container mx-auto flex flex-col-reverse lg:flex-row justify-center items-center gap-16 px-4 my"
+		class="w-full container mx-auto flex flex-col-reverse lg:flex-row justify-center items-center gap-16 px-4"
 	>
 		<img src="devto-article.gif" alt="" class="max-w-xl w-full rounded-2xl" />
 		<div class="max-w-lg">
@@ -93,7 +95,7 @@
 		</div>
 	</section>
 	<section
-		class="w-full container mx-auto flex flex-col lg:flex-row justify-center items-center gap-16 px-4 my"
+		class="w-full container mx-auto flex flex-col lg:flex-row justify-center items-center gap-16 px-4"
 	>
 		<div class="max-w-lg">
 			<h2 class="text-4xl font-bold text-gray-800 dark:text-gray-100 xl:text-3xl mb-8">
@@ -107,7 +109,7 @@
 		<img src="twitter-transalte.gif" alt="" class="max-w-xl w-full rounded-2xl" />
 	</section>
 	<section
-		class="w-full container mx-auto flex flex-col-reverse lg:flex-row justify-center items-center gap-16 px-4 my"
+		class="w-full container mx-auto flex flex-col-reverse lg:flex-row justify-center items-center gap-16 px-4"
 	>
 		<img src="github-fixgrammar.gif" alt="" class="max-w-xl w-full rounded-2xl" />
 		<div class="max-w-lg">
@@ -122,4 +124,19 @@
 	</section>
 </div>
 
-<footer class="pt-16" />
+<div class="flex flex-col items-center justify-center py-16 xl:py-32">
+	<Button link="https://buy.stripe.com/6oEbLM0RQ2yV4iQ8wx" animated>$39 Preorder now</Button>
+	<p class="text-center text-xs max-w-xl mx-auto italic text-gray-500 dark:text-gray-300 my-4">
+		You'll be notified of the launch via email
+	</p>
+</div>
+
+<footer class="flex flex-row justify-center pb-16">
+	<p>
+		Updates on twitter <a
+			href="https://twitter.com/e_pavanello"
+			class="font-semibold hover:underline"
+			target="_blank">EmaGPT✨</a
+		>
+	</p>
+</footer>
