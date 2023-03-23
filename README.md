@@ -9,3 +9,15 @@ GPT-Commands is a Chrome extension based on GPT-4 that enhances user experience 
 
 Lifetime license for GPT Commands without subscription.
 Insert your OpenAI API key and use the power of OpenAI models
+
+
+Introducing GPT-commands: The Chrome extension that lets you write faster and smarter than ever before!
+
+
+
+
+
+Context:
+GPT-commands is a Chrome extension developed by Emanuele Pavanello based on GPT-4. The extension allows you to write /gpt and choose the dialogue mode (answer, fix grammar, translate, and more). A quel punto l'estensione inizia a scrivere al posto tuo.
+Il prodotto è in preordine a un prezzo ridotto, a breve verrà lanciato con un aumento di prezzo, non perderti la possibilità di ottenere il massimo senza abbandonare le pagine web preferite.
+
