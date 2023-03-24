@@ -1,4 +1,6 @@
 <script>
+	import Logo from '$lib/components/Logo.svelte;
+
 	import Button from '$lib/components/Button.svelte';
 	import Icon from '$lib/components/Icon.svelte';
 	import '../app.css';
@@ -12,9 +14,7 @@
 				alt="MyBrain"
 				class="rounded-md shadow shadow-slate-300 dark:shadow-slate-900"
 			/>
-			<h1 class="tracking-tight text-4xl font-bold text-gray-800 dark:text-gray-100">
-				<span class="text-cyan-500">GPT</span><span>Commands</span>
-			</h1>
+			<Logo />
 		</header>
 	</div>
 
@@ -71,7 +71,7 @@
 	>
 		<div class="max-w-lg">
 			<h2 class="text-4xl font-bold text-gray-800 dark:text-gray-100 xl:text-3xl mb-8">
-				<Icon name="verified" class="text-yellow-300 text-xl"/> Influencer Mode
+				<Icon name="verified" class="text-yellow-300 text-xl" /> Influencer Mode
 			</h2>
 			<p>
 				GPT Commands allows users to become notable Twitter influencers, effectively boosting their
@@ -86,7 +86,7 @@
 		<img src="devto-article.gif" alt="" class="max-w-xl w-full rounded-2xl" />
 		<div class="max-w-lg">
 			<h2 class="text-4xl font-bold text-gray-800 dark:text-gray-100 xl:text-3xl mb-8">
-				<Icon name="border_color" class="text-green-500 text-xl"/> Writer Mode
+				<Icon name="border_color" class="text-green-500 text-xl" /> Writer Mode
 			</h2>
 			<p>
 				The Writer Mode in GPT-Commands allows you to delegate your writing tasks to GPT-4. Whether
@@ -100,7 +100,7 @@
 	>
 		<div class="max-w-lg">
 			<h2 class="text-4xl font-bold text-gray-800 dark:text-gray-100 xl:text-3xl mb-8">
-				<Icon name="translate" class="text-sky-500 text-xl"/> Translator Mode
+				<Icon name="translate" class="text-sky-500 text-xl" /> Translator Mode
 			</h2>
 			<p>
 				Translator mode in GPT Commands swiftly and accurately converts text between languages,
@@ -115,7 +115,7 @@
 		<img src="github-fixgrammar.gif" alt="" class="max-w-xl w-full rounded-2xl" />
 		<div class="max-w-lg">
 			<h2 class="text-4xl font-bold text-gray-800 dark:text-gray-100 xl:text-3xl mb-8">
-				<Icon name="menu_book" class="text-pink-500 text-xl"/> Fix grammar
+				<Icon name="menu_book" class="text-pink-500 text-xl" /> Fix grammar
 			</h2>
 			<p>
 				Fix grammar feature efficiently detects and corrects grammatical errors, enhancing text
