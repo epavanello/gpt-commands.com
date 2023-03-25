@@ -34,41 +34,24 @@ export interface Database {
   }
   public: {
     Tables: {
-      payments: {
+      licenses: {
         Row: {
           created_at: string | null
-          email: string | null
+          email: string
           id: number
+          license_key: string
         }
         Insert: {
           created_at?: string | null
-          email?: string | null
+          email: string
           id?: number
+          license_key: string
         }
         Update: {
           created_at?: string | null
-          email?: string | null
+          email?: string
           id?: number
-        }
-      }
-      user_info: {
-        Row: {
-          created_at: string | null
-          current_period_end: string | null
-          customer_id: string | null
-          id: string
-        }
-        Insert: {
-          created_at?: string | null
-          current_period_end?: string | null
-          customer_id?: string | null
-          id: string
-        }
-        Update: {
-          created_at?: string | null
-          current_period_end?: string | null
-          customer_id?: string | null
-          id?: string
+          license_key?: string
         }
       }
     }
