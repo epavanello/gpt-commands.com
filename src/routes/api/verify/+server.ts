@@ -8,15 +8,15 @@ import { handleErrorAndGetData } from '$lib/db';
 
 export const POST: RequestHandler = async ({ request }) => {
 	try {
-		const { license_key } = await request.json();
+		const { licenseKey } = await request.json();
 		const row = handleErrorAndGetData(
-			await supabaseClientAdmin.from('licenses').select('*').eq('license_key', license_key)
+			await supabaseClientAdmin.from('licenses').select('*').eq('license_key', licenseKey)
 		);
 		if (!row) {
-			throw new Error('License key not found');
+			await new Promise((resolve) => setTimeout(resolve, 5000));
+			return json({ valid: false });
 		}
-
-		return json({ done: true });
+		return json({ valid: true });
 	} catch (error) {
 		// aggiungi un attesa di 5 secondi per evitare bruteforce
 
