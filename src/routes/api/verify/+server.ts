@@ -6,6 +6,18 @@ import { supabaseClientAdmin } from '$lib/db.server';
 import { getErrorMessage } from '$lib/utilities';
 import { handleErrorAndGetData } from '$lib/db';
 
+// ebable cors for this route
+export const OPTIONS = () => {
+	return {
+		status: 200,
+		headers: {
+			'Access-Control-Allow-Origin': '*',
+			'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+			'Access-Control-Allow-Headers': 'Content-Type, Authorization'
+		}
+	};
+};
+
 export const POST: RequestHandler = async ({ request }) => {
 	try {
 		const { licenseKey } = await request.json();
