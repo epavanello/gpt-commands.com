@@ -6,15 +6,16 @@ import { supabaseClientAdmin } from '$lib/db.server';
 import { getErrorMessage } from '$lib/utilities';
 import { handleErrorAndGetData } from '$lib/db';
 
+const headers = {
+	'Access-Control-Allow-Origin': '*',
+	'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+	'Access-Control-Allow-Headers': 'Content-Type'
+};
 // ebable cors for this route
 export const OPTIONS = () => {
 	return new Response('', {
 		status: 200,
-		headers: {
-			'Access-Control-Allow-Origin': '*',
-			'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
-			'Access-Control-Allow-Headers': 'Content-Type'
-		}
+		headers
 	});
 };
 
@@ -28,11 +29,11 @@ export const POST: RequestHandler = async ({ request }) => {
 			await new Promise((resolve) => setTimeout(resolve, 5000));
 			return json({ valid: false });
 		}
-		return json({ valid: true });
+		return json({ valid: true }, { headers });
 	} catch (error) {
 		// aggiungi un attesa di 5 secondi per evitare bruteforce
 
 		await new Promise((resolve) => setTimeout(resolve, 5000));
-		throw svelteError(500, { message: getErrorMessage(error) });
+		throw svelteError(500, { message: getErrorMessage(error) }, { headers });
 	}
 };
