@@ -39,19 +39,19 @@ export interface Database {
           created_at: string | null
           email: string
           id: number
-          license_key: string
+          license_key: string | null
         }
         Insert: {
           created_at?: string | null
           email: string
           id?: number
-          license_key: string
+          license_key?: string | null
         }
         Update: {
           created_at?: string | null
           email?: string
           id?: number
-          license_key?: string
+          license_key?: string | null
         }
       }
     }
@@ -136,6 +136,7 @@ export interface Database {
           owner: string | null
           path_tokens: string[] | null
           updated_at: string | null
+          version: string | null
         }
         Insert: {
           bucket_id?: string | null
@@ -147,6 +148,7 @@ export interface Database {
           owner?: string | null
           path_tokens?: string[] | null
           updated_at?: string | null
+          version?: string | null
         }
         Update: {
           bucket_id?: string | null
@@ -158,6 +160,7 @@ export interface Database {
           owner?: string | null
           path_tokens?: string[] | null
           updated_at?: string | null
+          version?: string | null
         }
       }
     }
@@ -190,7 +193,7 @@ export interface Database {
         Args: {
           name: string
         }
-        Returns: string[]
+        Returns: unknown
       }
       get_size_by_bucket: {
         Args: Record<PropertyKey, never>

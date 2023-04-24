@@ -4,6 +4,7 @@
 	import Button from '$lib/components/Button.svelte';
 	import Icon from '$lib/components/Icon.svelte';
 	import '../app.css';
+	import { PUBLIC_STRIPE_PAYMENT_LINK } from '$env/static/public';
 </script>
 
 <main class="w-full h-3/4 min-h-[600px] flex flex-col justify-center items-center">
@@ -27,7 +28,7 @@
 		</p>
 	</div>
 
-	<Button link="https://buy.stripe.com/6oEbLM0RQ2yV4iQ8wx" animated>$39 Preorder now</Button>
+	<Button link={PUBLIC_STRIPE_PAYMENT_LINK} animated>$39 Preorder now</Button>
 	<p class="text-center text-xs max-w-xl mx-auto italic text-gray-500 dark:text-gray-300 my-4">
 		You'll be notified of the launch via email
 	</p>

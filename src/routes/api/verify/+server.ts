@@ -34,6 +34,6 @@ export const POST: RequestHandler = async ({ request }) => {
 		// aggiungi un attesa di 5 secondi per evitare bruteforce
 
 		await new Promise((resolve) => setTimeout(resolve, 5000));
-		throw svelteError(500, { message: getErrorMessage(error) }, { headers });
+		throw svelteError(500, { message: getErrorMessage(error) });
 	}
 };
