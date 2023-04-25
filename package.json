@@ -38,6 +38,7 @@
 		"@supabase/auth-helpers-sveltekit": "^0.9.0",
 		"@sveltejs/adapter-vercel": "^2.4.0",
 		"@types/gtag.js": "^0.0.12",
+		"@vercel/analytics": "^1.0.0",
 		"classnames": "^2.3.2",
 		"cross-env": "^7.0.3",
 		"daisyui": "^2.51.3",

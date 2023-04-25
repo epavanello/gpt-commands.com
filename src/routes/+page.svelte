@@ -5,6 +5,10 @@
 	import Icon from '$lib/components/Icon.svelte';
 	import '../app.css';
 	import { PUBLIC_STRIPE_PAYMENT_LINK } from '$env/static/public';
+	import { dev } from '$app/environment';
+	import { inject } from '@vercel/analytics';
+
+	inject({ mode: dev ? 'development' : 'production' });
 </script>
 
 <main class="w-full h-3/4 min-h-[600px] flex flex-col justify-center items-center">
@@ -28,9 +32,9 @@
 		</p>
 	</div>
 
-	<Button link={PUBLIC_STRIPE_PAYMENT_LINK} animated>$39 Preorder now</Button>
+	<Button link={PUBLIC_STRIPE_PAYMENT_LINK} animated>$39 Buy now</Button>
 	<p class="text-center text-xs max-w-xl mx-auto italic text-gray-500 dark:text-gray-300 my-4">
-		You'll be notified of the launch via email
+		You will receive the license via email
 	</p>
 
 	<!-- <div class="flex flex-col lg:flex-row justify-center items-center gap-8">
@@ -127,9 +131,9 @@
 </div>
 
 <div class="flex flex-col items-center justify-center py-16 xl:py-32">
-	<Button link="https://buy.stripe.com/6oEbLM0RQ2yV4iQ8wx" animated>$39 Preorder now</Button>
+	<Button link={PUBLIC_STRIPE_PAYMENT_LINK} animated>$39 Buy now</Button>
 	<p class="text-center text-xs max-w-xl mx-auto italic text-gray-500 dark:text-gray-300 my-4">
-		You'll be notified of the launch via email
+		You will receive the license via email
 	</p>
 </div>
 
