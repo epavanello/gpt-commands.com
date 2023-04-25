@@ -5,6 +5,10 @@ module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	darkMode: 'media',
 	theme: {
+		colors: {
+			app: '#3290EE',
+			appDark: '#0f79e3'
+		},
 		extend: {
 			backgroundImage: {
 				'gradient-conic': 'conic-gradient(var(--tw-gradient-stops))'
